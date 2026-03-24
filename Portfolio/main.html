@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="main.css">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Asad Anwar — Web Designer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+
+<div id="cur"></div>
+<div id="ring"></div>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="curtain-top"></div>
+  <div class="curtain-bot"></div>
+  <div class="loader-inner" id="loaderInner">
+    <div class="loader-logo">Asad<span>.</span></div>
+    <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+    <div class="loader-label">Portfolio</div>
+  </div>
+</div>
+
+<div id="page-content">
+
+<!-- NAV -->
+<nav>
+  <a href="main.html" class="logo">Asad Anwar.</a>
+  <ul class="nav-ul">
+    <li><a href="main.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="work.html">Works</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="btn-talk">Let's talk</a>
+  <button class="hamburger" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mob-nav" id="mobNav">
+  <a href="main.html" onclick="closeMob()">Home</a>
+  <a href="about.html" onclick="closeMob()">About</a>
+  <a href="work.html" onclick="closeMob()">Works</a>
+  <a href="contact.html" onclick="closeMob()">Contact</a>
+</div>
+
+<div class="wrap">
+<div class="grid">
+
+  <!-- HERO -->
+  <div class="hero anim">
+    <div class="hero-body">
+      <div class="photo-box">
+        <img src="images/Asad.jpg" alt="Asad Anwar" class="person-img"/>
+      </div>
+      <div class="hero-text">
+        <span class="htag">A WEB DESIGNER</span>
+        <h1 class="hname">Asad<br>Anwar.</h1>
+        <p class="hdesc">I am a Web Designer based<br>in Dubai.</p>
+      </div>
+    </div>
+    <a href="#" class="ca">⊕</a>
+  </div>
+
+  <!-- ② MARQUEE -->
+  <div class="mstrip anim">
+    <div class="mtrack" id="mt"></div>
+  </div>
+
+  <!-- ③ CREDENTIALS -->
+  <div class="cred anim">
+    <svg viewBox="0 0 200 75" width="165" xmlns="http://www.w3.org/2000/svg" style="opacity:.75;margin-bottom:8px;">
+      <path d="M18 52 C24 30,36 22,44 38 C48 46,44 58,52 54 C62 48,72 36,80 42 C86 48,82 60,90 55 C100 48,110 34,118 42 C124 48,120 58,128 54 C138 48,150 38,162 44 C168 48,168 54,178 50"
+        fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M18 62 C60 58,120 56,178 58" fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" opacity=".3"/>
+      <path d="M30 38 C32 46,38 54,42 46 C46 38,44 30,50 38" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" opacity=".55"/>
+    </svg>
+    <div>
+      <div class="ey">MORE ABOUT ME</div>
+      <div class="ct">Credentials</div>
+    </div>
+    <a href="credential.html" class="ca">⊕</a>
+  </div>
+
+  <!-- ④ PROJECTS — 3D Laptop -->
+  <div class="proj anim">
+
+    <!-- Ghost text — sits at z:1 so laptop (z:2) overlaps it naturally -->
+    <div class="proj-bg-text">MY WORKS</div>
+
+    <!-- Laptop -->
+    <div class="laptop-wrap">
+      <div class="laptop-scene">
+        <div class="laptop-3d">
+
+          <div class="laptop-lid">
+            <div class="laptop-screen">
+              <div class="sc-inner">
+                <div class="sc-hdr">MY WORKS</div>
+                <div class="sc-card">
+                  <div class="sc-card-top">
+                    <span>MEDITATION</span>
+                    <span>COURSE</span>
+                  </div>
+                  <div class="sc-card-bot">
+                    <div class="sc-line"></div>
+                    <div class="sc-line s"></div>
+                    <div class="sc-line"></div>
+                    <div class="sc-line xs"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lid-edge"></div>
+          <div class="laptop-hinge"></div>
+          <div class="laptop-base"></div>
+          <div class="laptop-foot"></div>
+          <div class="laptop-shadow"></div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom label -->
+    <div class="proj-info-row">
+      <div class="ey">SHOWCASE</div>
+      <div class="ct">Projects</div>
+    </div>
+    <a href="work.html" class="ca">⊕</a>
+
+  </div>
+
+  <!-- ⑤⑥⑦ ROW 3 -->
+  <div class="row3">
+  <div class="gf anim">
+    <div>
+      <img src="images/resume.svg" alt="Icon" width="86" height="86">
+    </div>
+    <div><div class="ey">Download</div><div class="ct">Resume</div></div>
+    <a href="#" class="ca">⊕</a>
+  </div>
+
+  <div class="svc anim">
+    <div class="svc-grid">
+      <div class="svc-ic"><div class="ic-circle"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg></div></div>
+      <div class="svc-ic"><div class="ic-circle"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8.5 17l3.5-10 3.5 10"/><path d="M9.5 14.5h5"/></svg></div></div>
+      <div class="svc-ic"><div class="ic-circle"><svg viewBox="0 0 24 24"><circle cx="9" cy="12" r="6"/><circle cx="15" cy="12" r="6"/></svg></div></div>
+      <div class="svc-ic"><div class="ic-circle"><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="3"/><line x1="9" y1="7" x2="15" y2="7"/><circle cx="12" cy="17" r="1" fill="#ccc"/></svg></div></div>
+    </div>
+    <div><div class="ey">SPECIALIZATION</div><div class="ct">Services Offering</div></div>
+    <a href="#" class="ca">⊕</a>
+  </div>
+
+  <div class="prf anim">
+    <div class="prf-icons">
+      <div class="prf-btn"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm6.6 5.4c1.1 1.4 1.76 3.12 1.79 5-.26-.06-2.88-.58-5.52-.25-.06-.14-.11-.28-.17-.42-.16-.4-.34-.8-.53-1.18 2.9-1.18 4.23-2.88 4.43-3.15zM12 3.81c2 0 3.84.71 5.25 1.88-.18.25-1.38 1.83-4.19 2.88C11.77 6.6 10.47 5 10.25 4.72c.55-.12 1.15-.19 1.75-.19zm-4.27.94c.21.26 1.49 1.86 2.84 3.8C7.18 9.5 4.92 9.49 4.67 9.49c.39-2.01 1.57-3.73 3.06-4.74zM3.81 12.01v-.27c.24.01 2.95.04 6.59-.91.19.36.36.73.52 1.1l-.5.14c-3.77 1.08-5.77 4.04-5.94 4.31A8.22 8.22 0 013.81 12zm8.19 8.19c-1.82 0-3.49-.62-4.83-1.65.14-.25 1.7-3.02 5.82-4.34l.05-.02c1.04 2.69 1.47 4.95 1.58 5.58-.82.28-1.7.43-2.62.43zm4.39-1.1c-.08-.48-.47-2.65-1.44-5.3 2.46-.39 4.62.25 4.89.33-.35 2.09-1.47 3.92-3.45 4.97z"/></svg></div>
+      <div class="prf-btn"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.259 5.631zM17.083 19.77h1.833L7.084 4.126H5.117z"/></svg></div>
+    </div>
+    <div><div class="ey">STAY WITH ME</div><div class="ct">Profiles</div></div>
+    <a href="#" class="ca">⊕</a>
+  </div>
+  </div>
+
+  <!-- ⑧ STATS -->
+  <div class="stats anim">
+    <div class="st"><div class="sn"><span class="cnt" data-t="7">0</span></div><div class="sl">YEARS<br>EXPERIENCE</div></div>
+    <div class="sdiv"></div>
+    <div class="st"><div class="sn">+<span class="cnt" data-t="125">0</span></div><div class="sl">CLIENTS<br>WORLDWIDE</div></div>
+    <div class="sdiv"></div>
+    <div class="st"><div class="sn">+<span class="cnt" data-t="210">0</span></div><div class="sl">TOTAL<br>PROJECTS</div></div>
+  </div>
+
+  <!-- ⑨ CTA -->
+  <div class="cta anim">
+    <div class="cta-star">
+      <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 3 L17.8 13 L28 16 L17.8 19 L16 29 L14.2 19 L4 16 L14.2 13 Z" stroke="rgba(255,255,255,.45)" stroke-width="1" fill="none"/>
+        <path d="M16 7 L17.2 13.2 L23 16 L17.2 18.8 L16 25 L14.8 18.8 L9 16 L14.8 13.2 Z" fill="rgba(255,255,255,.1)"/>
+      </svg>
+    </div>
+    <div class="cta-title">Let's<br>work <span class="bl">together.</span></div>
+    <a href="contact.html" class="ca">⊕</a>
+  </div>
+
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer style="text-align:center;padding:48px 48px 32px;border-top:1px solid var(--border);margin-top:8px;">
+  <a href="main.html" style="font-size:20px;font-weight:800;color:#fff;letter-spacing:-.5px;margin-bottom:24px;display:block;text-decoration:none;">Asad Anwar.</a>
+  <ul style="display:flex;gap:28px;justify-content:center;list-style:none;margin-bottom:0;">
+    <li><a href="main.html" style="color:var(--muted);text-decoration:none;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--muted)'">Home</a></li>
+    <li><a href="about.html" style="color:var(--muted);text-decoration:none;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--muted)'">About</a></li>
+    <li><a href="work.html" style="color:var(--muted);text-decoration:none;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--muted)'">Works</a></li>
+    <li><a href="contact.html" style="color:var(--muted);text-decoration:none;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--muted)'">Contact</a></li>
+  </ul>
+</footer>
+
+</div>
+
+<script>
+const loader=document.getElementById('loader'),loaderInner=document.getElementById('loaderInner'),pageContent=document.getElementById('page-content');
+setTimeout(()=>{loaderInner.classList.add('hide');},1100);
+setTimeout(()=>{loader.classList.add('open');pageContent.classList.add('visible');},1350);
+setTimeout(()=>{loader.classList.add('done');loader.style.display='none';},2400);
+
+const ham=document.getElementById('ham'),mobNav=document.getElementById('mobNav');
+ham.addEventListener('click',()=>{ham.classList.toggle('open');mobNav.classList.toggle('open');});
+function closeMob(){ham.classList.remove('open');mobNav.classList.remove('open');}
+
+const cur=document.getElementById('cur'),ring=document.getElementById('ring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px';});
+(function loop(){rx+=(mx-rx)*.13;ry+=(my-ry)*.13;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(loop);})();
+document.querySelectorAll('a,.ca,.prf-btn,.ic-circle,.btn-talk').forEach(el=>{
+  el.addEventListener('mouseenter',()=>ring.classList.add('g'));
+  el.addEventListener('mouseleave',()=>ring.classList.remove('g'));
+});
+
+const mt=document.getElementById('mt');
+for(let i=0;i<28;i++){const s=document.createElement('span');s.className='mi';s.innerHTML='LATEST WORK AND <b>FEATURED</b> <span class="dot"></span> ';mt.appendChild(s);}
+
+function countUp(el){const t=+el.dataset.t,dur=1800,s=performance.now();(function step(n){const p=Math.min((n-s)/dur,1),e=1-Math.pow(1-p,3);el.textContent=Math.floor(e*t);if(p<1)requestAnimationFrame(step);else el.textContent=t;})(performance.now());}
+new IntersectionObserver(en=>{en.forEach(e=>{if(e.isIntersecting){e.target.querySelectorAll('.cnt').forEach(countUp);}});},{threshold:.3}).observe(document.querySelector('.stats'));
+
+document.querySelectorAll('.hero,.cred,.proj,.gf,.svc,.prf,.stats,.cta').forEach(c=>{
+  c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`translateY(-4px) rotateX(${-y*5}deg) rotateY(${x*5}deg)`;c.style.transition='transform .08s';});
+  c.addEventListener('mouseleave',()=>{c.style.transform='';c.style.transition='transform .5s cubic-bezier(.23,1,.32,1)';});
+});
+</script>
+</body>
+</html>

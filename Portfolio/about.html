@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="about.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Asad Anwar — About</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<div id="cur"></div>
+<div id="ring"></div>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="curtain-top"></div>
+  <div class="curtain-bot"></div>
+  <div class="loader-inner" id="loaderInner">
+    <div class="loader-logo">Asad<span>.</span></div>
+    <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+    <div class="loader-label">About</div>
+  </div>
+</div>
+
+<!-- PAGE -->
+<div id="page-content">
+
+<!-- NAV -->
+<nav>
+  <a href="main.html" class="logo">Asad Anwar.</a>
+  <ul class="nav-ul">
+    <li><a href="main.html">Home</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="work.html">Works</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="https://wa.me/971559366599" target="_blank" class="btn-talk">Let's talk</a>
+  <button class="hamburger" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mob-nav" id="mobNav">
+  <a href="main.html" onclick="closeMob()">Home</a>
+  <a href="about.html" onclick="closeMob()">About</a>
+  <a href="work.html" onclick="closeMob()">Works</a>
+  <a href="contact.html" onclick="closeMob()">Contact</a>
+</div>
+
+<div class="wrap">
+
+  <!-- TOP ROW -->
+  <!-- TOP SECTION: photo spans rows 1-2, heading row1 right, bio row2 right -->
+  <div class="top-section">
+
+    <!-- Photo — spans both rows -->
+    <div class="photo-card anim a1">
+      <div class="photo-bg">
+        <img src="images/Asad.jpg" alt="Asad Anwar" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;position:absolute;top:0;left:0;border-radius:12px;"/>
+      </div>
+    </div>
+
+    <!-- Heading top-right -->
+    <div class="top-heading anim a2">
+      <span class="star-icon">✳</span>
+      <h1>SELF-SUMMARY</h1>
+      <span class="star-icon">✳</span>
+    </div>
+
+    <!-- Bio bottom-right -->
+    <div class="bio-card anim a3">
+      <div class="bio-star">
+        <svg viewBox="0 0 32 32"><path d="M16 3 L17.8 13 L28 16 L17.8 19 L16 29 L14.2 19 L4 16 L14.2 13 Z"/></svg>
+      </div>
+      <div class="bio-name">Asad Anwar</div>
+      <p class="bio-text">I am a Dubai-based UI/UX designer and frontend developer with a focus on web design, illustration, and visual development. I have a diverse range of experience having worked across various fields and industries.</p>
+    </div>
+
+  </div>
+
+  <!-- MIDDLE ROW: Experience + Education -->
+  <div class="mid-row">
+
+    <!-- Experience -->
+    <div class="exp-card anim a4">
+      <div class="section-label">Experience</div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2020 – 2021</div>
+        <div class="tl-title">Graphic Designer</div>
+        <div class="tl-sub">Quick Care Auto Spare Parts</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2022 – 2022</div>
+        <div class="tl-title">Graphic Designer</div>
+        <div class="tl-sub">Al Haji Auto Repairing Center</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2023 – 2024</div>
+        <div class="tl-title">UI/UX Designer</div>
+        <div class="tl-sub">Freelancing</div>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="edu-card anim a5">
+      <div class="section-label">Education</div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2019 – 2020</div>
+        <div class="tl-title">Graphic & Web Designing</div>
+        <div class="tl-sub">Rolla Academy Dubai</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2020 – 2022</div>
+        <div class="tl-title">Commerce</div>
+        <div class="tl-sub">High School</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2023 – Present</div>
+        <div class="tl-title">Diploma in Creative Computing</div>
+        <div class="tl-sub">Metaverse Age Institute</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM ROW: Profiles + CTA + Credentials -->
+  <div class="bot-row">
+
+    <!-- Profiles -->
+    <div class="profiles-card anim a6">
+      <div class="prf-icons">
+        <!-- Dribbble -->
+        <div class="prf-btn">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm6.6 5.4c1.1 1.4 1.76 3.12 1.79 5-.26-.06-2.88-.58-5.52-.25-.06-.14-.11-.28-.17-.42-.16-.4-.34-.8-.53-1.18 2.9-1.18 4.23-2.88 4.43-3.15zM12 3.81c2 0 3.84.71 5.25 1.88-.18.25-1.38 1.83-4.19 2.88C11.77 6.6 10.47 5 10.25 4.72c.55-.12 1.15-.19 1.75-.19zm-4.27.94c.21.26 1.49 1.86 2.84 3.8C7.18 9.5 4.92 9.49 4.67 9.49c.39-2.01 1.57-3.73 3.06-4.74zM3.81 12.01v-.27c.24.01 2.95.04 6.59-.91.19.36.36.73.52 1.1l-.5.14c-3.77 1.08-5.77 4.04-5.94 4.31A8.22 8.22 0 013.81 12zm8.19 8.19c-1.82 0-3.49-.62-4.83-1.65.14-.25 1.7-3.02 5.82-4.34l.05-.02c1.04 2.69 1.47 4.95 1.58 5.58-.82.28-1.7.43-2.62.43zm4.39-1.1c-.08-.48-.47-2.65-1.44-5.3 2.46-.39 4.62.25 4.89.33-.35 2.09-1.47 3.92-3.45 4.97z"/></svg>
+        </div>
+        <!-- X/Twitter -->
+        <div class="prf-btn">
+          <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.259 5.631zM17.083 19.77h1.833L7.084 4.126H5.117z"/></svg>
+        </div>
+      </div>
+      <div>
+        <div class="card-ey">Stay with me</div>
+        <div class="card-ct">Profiles</div>
+      </div>
+      <a href="#" class="ca">⊕</a>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-card anim a7">
+      <div class="cta-star">
+        <svg viewBox="0 0 32 32"><path d="M16 3 L17.8 13 L28 16 L17.8 19 L16 29 L14.2 19 L4 16 L14.2 13 Z" stroke="rgba(255,255,255,.4)" stroke-width="1" fill="none"/><path d="M16 7 L17.2 13.2 L23 16 L17.2 18.8 L16 25 L14.8 18.8 L9 16 L14.8 13.2 Z" fill="rgba(255,255,255,.08)"/></svg>
+      </div>
+      <div class="cta-title">Let's<br>work <span class="bl">together.</span></div>
+      <a href="https://wa.me/971559366599" target="_blank" class="ca">⊕</a>
+    </div>
+
+    <!-- Credentials -->
+    <div class="cred-card anim a8">
+      <svg class="signature-svg" viewBox="0 0 200 75" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 52 C24 30,36 22,44 38 C48 46,44 58,52 54 C62 48,72 36,80 42 C86 48,82 60,90 55 C100 48,110 34,118 42 C124 48,120 58,128 54 C138 48,150 38,162 44 C168 48,168 54,178 50" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M18 62 C60 58,120 56,178 58" fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" opacity=".3"/>
+      </svg>
+      <div>
+        <div class="card-ey">More about me</div>
+        <div class="card-ct">Credentials</div>
+      </div>
+      <a href="#" class="ca">⊕</a>
+    </div>
+
+  </div>
+
+  <!-- TOOLS ROW -->
+  <div class="tools-row anim a8">
+    <div class="tools-label">Favourite Tools</div>
+    <div class="tools-grid">
+      <div class="tool-item">
+        <div class="tool-icon"><img src="images/photoshop.png" alt="Photoshop"/></div>
+        <div class="tool-name">Photoshop</div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-icon"><img src="images/figma.png" alt="Figma"/></div>
+        <div class="tool-name">Figma</div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-icon"><img src="images/Ai.png" alt="Illustrator"/></div>
+        <div class="tool-name">Illustrator</div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-icon"><img src="images/html.png" alt="HTML5"/></div>
+        <div class="tool-name">HTML5</div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-icon"><img src="images/css.png" alt="CSS3"/></div>
+        <div class="tool-name">CSS3</div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /wrap -->
+
+<!-- FOOTER -->
+<footer>
+  <a href="main.html" class="footer-logo">Asad Anwar.</a>
+  <ul class="footer-nav">
+    <li><a href="main.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="work.html">Works</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  
+</footer>
+
+</div><!-- /page-content -->
+
+<script>
+// LOADER
+const loader=document.getElementById('loader'),loaderInner=document.getElementById('loaderInner'),pageContent=document.getElementById('page-content');
+setTimeout(()=>{loaderInner.classList.add('hide');},1100);
+setTimeout(()=>{loader.classList.add('open');pageContent.classList.add('visible');},1350);
+setTimeout(()=>{loader.classList.add('done');loader.style.display='none';},2400);
+
+// HAMBURGER
+const ham=document.getElementById('ham'),mobNav=document.getElementById('mobNav');
+ham.addEventListener('click',()=>{ham.classList.toggle('open');mobNav.classList.toggle('open');});
+function closeMob(){ham.classList.remove('open');mobNav.classList.remove('open');}
+
+// CURSOR
+const cur=document.getElementById('cur'),ring=document.getElementById('ring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px';});
+(function loop(){rx+=(mx-rx)*.13;ry+=(my-ry)*.13;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(loop);})();
+document.querySelectorAll('a,.ca,.prf-btn,.btn-talk,.tool-item').forEach(el=>{
+  el.addEventListener('mouseenter',()=>ring.classList.add('g'));
+  el.addEventListener('mouseleave',()=>ring.classList.remove('g'));
+});
+
+// TILT
+document.querySelectorAll('.photo-card,.bio-card,.exp-card,.edu-card,.profiles-card,.cta-card,.cred-card').forEach(c=>{
+  c.addEventListener('mousemove',e=>{
+    const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+    c.style.transform=`translateY(-4px) rotateX(${-y*5}deg) rotateY(${x*5}deg)`;
+    c.style.transition='transform .08s';
+  });
+  c.addEventListener('mouseleave',()=>{c.style.transform='';c.style.transition='transform .5s cubic-bezier(.22,1,.36,1)';});
+});
+</script>
+</body>
+</html>
